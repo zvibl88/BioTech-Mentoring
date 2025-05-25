@@ -110,17 +110,19 @@
 
     <div class="section">
       <h2>📩 רוצה שאחזור אלייך עם כל הפרטים?</h2>
-      <form onsubmit="event.preventDefault(); alert('הפרטים נשלחו בהצלחה!');">
-        <label>שם מלא</label>
-        <input type="text" required>
+     <form name="contact" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact">
 
-        <label>אימייל</label>
-        <input type="email" required>
+  <label>שם מלא</label>
+  <input type="text" name="name" required>
 
-        <label>טלפון</label>
-        <input type="tel" required>
+  <label>אימייל</label>
+  <input type="email" name="email" required>
 
-        <button class="cta">אני רוצה ליווי מקצועי</button>
+  <label>טלפון</label>
+  <input type="tel" name="phone" required>
+
+  <button class="cta">שלחו לי פרטים</button>
       </form>
     </div>
 
